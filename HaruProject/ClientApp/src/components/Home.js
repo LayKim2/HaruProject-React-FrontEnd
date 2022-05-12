@@ -26,7 +26,7 @@ export class Home extends Component {
                             <nav className="navbar navbar-expand-lg custom_nav-container ">
                                 <a className="navbar-brand" href="index.html">
                                     <span>
-                                        HARU
+                                        HARU（春）
                                     </span>
                                 </a>
 
