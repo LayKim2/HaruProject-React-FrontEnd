@@ -106,7 +106,7 @@ a:focus {
 /*header section*/
 .hero_area {
   position: relative;
-  min-height: 100vh;
+  min-height: auto;
   display: flex;
   flex-direction: column;
   padding-left: 45px;
@@ -125,7 +125,6 @@ a:focus {
       color: #999;
       margin: 5px 0;
     }
-
   }
 
   .container-fluid {
@@ -140,8 +139,8 @@ a:focus {
     border-radius: 0 0 45px 0;
     padding-left: 0;
   }
-  .header_section{
-    box-shadow: 0 0 3px 0 rgba($color: #000000, $alpha: .25);
+  .header_section {
+    box-shadow: 0 0 3px 0 rgba($color: #000000, $alpha: 0.25);
   }
 }
 
@@ -259,7 +258,6 @@ a:focus {
   }
 
   &[aria-expanded="false"] {
-
     .s-1,
     .s-2,
     .s-3 {
@@ -282,7 +280,6 @@ a:focus {
       color: $primary2;
     }
   }
-
 }
 
 /*end header section*/
@@ -314,7 +311,8 @@ a:focus {
       margin-bottom: 20px;
     }
 
-    p {}
+    p {
+    }
 
     .btn-box {
       display: flex;
@@ -328,11 +326,13 @@ a:focus {
       }
 
       .btn1 {
-        @include hero_btn(darken($color: $primary1, $amount: 10),
+        @include hero_btn(
+          darken($color: $primary1, $amount: 10),
           $white,
           12px,
           15px,
-          5px);
+          5px
+        );
       }
     }
   }
@@ -370,8 +370,6 @@ a:focus {
 
 // shop section
 .shop_section {
-
-
   .heading_container {
     margin-bottom: 20px;
   }
@@ -439,8 +437,6 @@ a:focus {
 }
 
 // end shop section
-
-
 
 // about section
 .about_section {
@@ -549,9 +545,9 @@ a:focus {
 
 .contact_section {
   position: relative;
-.row{
-  align-items: center;
-}
+  .row {
+    align-items: center;
+  }
   form {
     margin-top: 45px;
   }
@@ -646,7 +642,6 @@ a:focus {
     p {
       margin-top: 15px;
     }
-
   }
 
   .owl-carousel {
@@ -666,7 +661,6 @@ a:focus {
         bottom: 0px;
         font-size: 24px;
         margin: 0 5px;
-
       }
     }
   }
@@ -691,7 +685,6 @@ a:focus {
   }
 
   .footer_contact {
-
     .contact_link_box {
       display: flex;
       flex-direction: column;
